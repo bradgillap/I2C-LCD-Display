@@ -23,10 +23,13 @@ Any [raspbian](https://www.raspbian.org/) based operating system will work. I re
 
 ##Connect LCD to Pi
 
-***Step 1.*** 
-***Step 2.***
-***Step 3.***
-***Step 4.***
+***Step 1.*** Connect GND to GROUND. Pin 6
+
+***Step 2.*** Connect VCC to 5V. Pin 2
+
+***Step 3.*** Connect SDA to GPIO. Pin 3
+
+***Step 4.*** Connect SCL to GPIO. Pin 5
 
 Reference GPIO
 ![LCD running demo script.](https://github.com/bradgillap/I2C-LCD-Display/blob/master/gpioref2.png)
