@@ -46,8 +46,6 @@ sudo nano /boot/config.txt
 ```
 ***Step 5.*** Find the section for ***i2c*** and change the lines so they look like this.
 ```
-sudo nano /boot/config.txt
-```
 #-------i2c-------------
 dtparam=i2c_arm=on
 dtparam=i2c1=on
