@@ -3,6 +3,7 @@
 Drivers and code for two very low cost LCD displays with instructions on how to setup each with python on a Raspberry Pi. This github repo has plenty of demo files I've collected from others or written myself to display some possibilities. 
 
 
+![LCD running demo script.](https://github.com/bradgillap/I2C-LCD-Display/blob/master/example.jpg)
 
 ##Requirements
 ### Hardware
