@@ -25,7 +25,7 @@ We first need to enable the GPIO pins on the raspberrypi
 
 ***Step 1.*** Login to your pi through terminal or ssh and install the following packages.
 ```
-sudo apt-get update -y && sudo apt-get install python-smbus -y
+sudo apt-get update -y && sudo apt-get install python-smbus git -y
 ```
 ***Step 2.*** Run this command to edit the modules file.
 ```
@@ -52,4 +52,20 @@ sudo nano /boot/config.txt
 dtparam=i2c_arm=on
 dtparam=i2c1=on
 i2c_arm_baudrate=100000
+```
+***Step 6.*** clone this repository to your home directory.
+```
+cd ~
+git clone https://github.com/bradgillap/I2C-LCD-Display
+```
+
+***Step 7.*** That's it! Now you can run any of the demo files. Just remember each script requires lcddriver.py and i2c_lib.py to run. 
+***Example 16x2 Display***
+```
+sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py
+```
+#### OR
+***Run the script in the background***
+```
+sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py &
 ```
