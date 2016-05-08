@@ -46,7 +46,7 @@ i2c-dev         # This enables i2c communication.
 ```
 sudo nano /boot/config.txt
 ```
-***Step 5.*** Find the section for ***i2c*** and change the lines so they look like this.
+***Step 5.*** Find the section for ***i2c*** and change the lines so they look like this. If you don't see these lines, go ahead and add them now.
 ```
 #-------i2c-------------
 dtparam=i2c_arm=on
