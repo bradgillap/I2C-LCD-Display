@@ -24,7 +24,7 @@ We need to do a few things before you can begin running demo python scripts to d
 We first need to enable the GPIO pins on the raspberrypi
 
 1. Login to your pi through terminal or ssh.
-2. 
+2. Run this command to edit the modules file.
 ```
 sudo nano /etc/modules
 ```
