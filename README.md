@@ -16,4 +16,4 @@ http://www.dx.com/p/5v-iic-i2c-3-1-blue-screen-lcd-display-module-for-arduino-gr
 #### Raspberry Pi 1/2/3
 [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
 ### Operating System
-Any [raspbian](https://www.raspbian.org/) based operating system will work. I recommend DietPi for beginning your projects to reduce on overhead but novice users should use raspbian.
+Any [raspbian](https://www.raspbian.org/) based operating system will work. I recommend [DietPi](http://dietpi.com/) for beginning your projects to reduce on overhead but novice users should use [raspbian](https://www.raspbian.org/).
