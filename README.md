@@ -74,7 +74,7 @@ sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py &
 
 #### OR
 
-*** Run your script at boot every time ***
+***Run your script at boot every time***
 ```
 sudo nano /etc/rc
 #add this line to with a path to your script. Don't forget the and symbol
