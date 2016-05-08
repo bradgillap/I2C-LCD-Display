@@ -25,11 +25,11 @@ We first need to enable the GPIO pins on the raspberrypi
 
 1. Login to your pi through terminal or ssh.
 2. 
-...
+```
 sudo nano /etc/modules
-...
+```
 3. On the last line enter the following. If they already exist then just skip this step.
-...
+```
 # /etc/modules: kernel modules to load at boot time.
 #
 # This file contains the names of kernel modules that should be loaded
@@ -38,4 +38,4 @@ sudo nano /etc/modules
 
 snd-bcm2835
 i2c-dev
-...
+```
