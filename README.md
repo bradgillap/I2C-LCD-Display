@@ -21,3 +21,21 @@ Any [raspbian](https://www.raspbian.org/) based operating system will work. I re
 ##Software Setup
 We need to do a few things before you can begin running demo python scripts to display things on the LCD screen. Just follow the steps and you should be fine. If you are using the **root** account, you can ignore the **sudo** command.
 
+We first need to enable the GPIO pins on the raspberrypi
+
+1. Login to your pi through terminal or ssh.
+2. 
+...
+sudo nano /etc/modules
+...
+3. On the last line enter the following. If they already exist then just skip this step.
+...
+# /etc/modules: kernel modules to load at boot time.
+#
+# This file contains the names of kernel modules that should be loaded
+# at boot time, one per line. Lines beginning with "#" are ignored.
+# Parameters can be specified after the module name.
+
+snd-bcm2835
+i2c-dev
+...
