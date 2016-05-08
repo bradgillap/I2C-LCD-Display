@@ -37,6 +37,6 @@ sudo nano /etc/modules
 # at boot time, one per line. Lines beginning with "#" are ignored.
 # Parameters can be specified after the module name.
 
-snd-bcm2835
-i2c-dev
+snd-bcm2835     # This enables GPIO pins on the pi.
+i2c-dev         # This enables i2c communication.
 ```
