@@ -19,7 +19,7 @@ http://www.dx.com/p/5v-iic-i2c-3-1-blue-screen-lcd-display-module-for-arduino-gr
 Any [raspbian](https://www.raspbian.org/) based operating system will work. I recommend [DietPi](http://dietpi.com/) for beginning your projects to reduce on overhead but novice users should use [raspbian](https://www.raspbian.org/).
 
 ##Software Setup
-We need to do a few things before you can begin running demo python scripts to display things on the LCD screen. Just follow the steps and you should be fine. If you are using the **root** account, you can ignore the **sudo** command. You only need to do these stpes once.
+We need to do a few things before you can begin running demo python scripts to display things on the LCD screen. Just follow the steps and you should be fine. If you are using the **root** account, you can ignore the **sudo** command. You only need to do these steps once.
 
 We first need to enable the GPIO pins on the raspberrypi
 
@@ -39,4 +39,17 @@ sudo nano /etc/modules
 
 snd-bcm2835     # This enables GPIO pins on the pi.
 i2c-dev         # This enables i2c communication.
+```
+***Step 4.*** Now we need to also turn on i2c everytime the pi boots.
+```
+sudo nano /boot/config.txt
+```
+***Step 5.*** Find the section for ***i2c*** and change the lines so they look like this.
+```
+sudo nano /boot/config.txt
+```
+#-------i2c-------------
+dtparam=i2c_arm=on
+dtparam=i2c1=on
+i2c_arm_baudrate=100000
 ```
