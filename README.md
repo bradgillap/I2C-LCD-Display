@@ -60,11 +60,13 @@ git clone https://github.com/bradgillap/I2C-LCD-Display
 ```
 
 ***Step 7.*** That's it! Now you can run any of the demo files. Just remember each script requires lcddriver.py and i2c_lib.py to run. 
+
 ***Example 16x2 Display***
 ```
 sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py
 ```
 #### OR
+
 ***Run the script in the background***
 ```
 sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py &
