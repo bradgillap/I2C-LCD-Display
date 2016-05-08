@@ -5,9 +5,7 @@ Drivers and code for two very low cost LCD displays.
 
 
 ##Requirements
-
 ### Hardware
-
 #### Screens
 
 **16x2 LCD Screen**
