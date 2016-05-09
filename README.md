@@ -62,7 +62,7 @@ i2c-dev         # This enables i2c communication.
 ```
 ctrl+o to save
 ```
-***Step :four::*** i2c-bcm2708 is now part of raspbian. So we can blacklist it from modprobe detection by commenting it out.
+***Step :four::*** i2c-bcm2708 is what we are using so it's important not to blacklist.
 ```
 sudo nano /etc/modprobe.d/raspi-blacklist.conf
 ```
