@@ -35,7 +35,7 @@ Reference GPIO
 ![LCD running demo script.](https://github.com/bradgillap/I2C-LCD-Display/blob/master/gpioref2.png)
 
 
-##Software Setup
+###Software Setup
 We need to do a few things before you can begin running demo python scripts to display things on the LCD screen. Just follow the steps and you should be fine. If you are using the **root** account, you can ignore the **sudo** command. You only need to do these steps once.
 
 We first need to enable the GPIO pins on the raspberrypi
@@ -127,3 +127,7 @@ python /root/YOURLCDSCRIPT.py &
 ctrl+o to save
 ```
 
+##Troubleshooting
+
+***Q:*** I have an older revision of pi with 256mb ram.
+***A:*** You may have to change the i2c_lib.py to use GPIO port 0 instead of the default port 1. Make sure to delete any previous compiled pyc files from the directory _rm *.pyc_
