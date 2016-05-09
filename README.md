@@ -18,7 +18,7 @@ http://www.dx.com/p/i2c-iic-lcd-1602-display-module-with-white-backlight-4-pin-c
 http://www.dx.com/p/5v-iic-i2c-3-1-blue-screen-lcd-display-module-for-arduino-green-black-232993
 #### Raspberry Pi :one:/:two:/:three: 
 [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
-### Operating System :barchart:
+### Operating System :bar_chart:
 Any [raspbian](https://www.raspbian.org/) based operating system will work. I recommend [DietPi](http://dietpi.com/) for beginning your projects to reduce on overhead but novice users should use [raspbian](https://www.raspbian.org/).
 
 ##Connect LCD to Pi :electric_plug:
