@@ -127,7 +127,7 @@ python /root/YOURLCDSCRIPT.py &
 ctrl+o to save
 ```
 
-##Troubleshooting
+##Troubleshooting :raising_hand:
 
 :question: : I have an older revision of pi with 256mb ram.
 
