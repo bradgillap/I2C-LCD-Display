@@ -129,11 +129,11 @@ ctrl+o to save
 
 ##Troubleshooting
 
-:question: I have an older revision of pi with 256mb ram.
+:question: : I have an older revision of pi with 256mb ram.
 
-***A:*** You may have to change the i2c_lib.py to use GPIO port 0 instead of the default port 1.See line 5 in the i2c_lib.py file. Make sure to delete any previous compiled pyc files from the directory _rm *.pyc_ before you try again.
+:thumbsup: : You may have to change the i2c_lib.py to use GPIO port 0 instead of the default port 1.See line 5 in the i2c_lib.py file. Make sure to delete any previous compiled pyc files from the directory _rm *.pyc_ before you try again.
 
 
-***Q:*** My /boot/config.txt keeps being overwritten with the wrong values.
+:question: : My /boot/config.txt keeps being overwritten with the wrong values.
 
-***A:*** Use raspi-config or dietpi-config to make the change in the advanced options section instead.
+:thumbsup: : Use raspi-config or dietpi-config to make the change in the advanced options section instead.
