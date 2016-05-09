@@ -42,7 +42,7 @@ We first need to enable the GPIO pins on the raspberrypi
 
 ***Step 1.*** Login to your pi through terminal or ssh and install the following packages.
 ```
-sudo apt-get update -y && sudo apt-get install python-smbus git -y
+sudo apt-get update -y && sudo apt-get install python-smbus git i2c-tools -y
 ```
 ***Step 2.*** Run this command to edit the modules file.
 ```
@@ -81,6 +81,12 @@ ctrl+o to save
 sudo nano /boot/config.txt
 ```
 ***Step 7.*** Find the section for ***i2c*** and change the lines so they look like this. If you don't see these lines, go ahead and add them now.
+
+***Dietpi users*** use *dietpi-config* and enable RPI i2c under advanced options.
+
+***Raspbian users*** use *raspi-config* and enable RPI i2c under advanced options. If asked about Arm says YES.
+
+In either case your /boot/config.txt should look like this.
 ```
 #-------i2c-------------
 dtparam=i2c_arm=on
