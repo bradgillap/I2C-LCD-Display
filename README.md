@@ -62,11 +62,25 @@ i2c-dev         # This enables i2c communication.
 ```
 ctrl+o to save
 ```
-***Step 4.*** Now we need to also turn on i2c everytime the pi boots.
+***Step 4.*** i2c-bcm2708 is now part of raspbian. So we can blacklist it from modprobe detection by commenting it out.
+```
+sudo nano /etc/modprobe.d/raspi-blacklist.conf
+```
+***Step 5.*** Notice the second line where we have commented out i2c
+```
+blacklist spi-bcm2708
+#blacklist i2c-bcm2708
+blacklist snd-soc-pcm512x
+blacklist snd-soc-wm8804
+```
+```
+ctrl+o to save
+```
+***Step 6.*** Now we need to also turn on i2c everytime the pi boots.
 ```
 sudo nano /boot/config.txt
 ```
-***Step 5.*** Find the section for ***i2c*** and change the lines so they look like this. If you don't see these lines, go ahead and add them now.
+***Step 7.*** Find the section for ***i2c*** and change the lines so they look like this. If you don't see these lines, go ahead and add them now.
 ```
 #-------i2c-------------
 dtparam=i2c_arm=on
@@ -76,13 +90,13 @@ i2c_arm_baudrate=100000
 ```
 ctrl+o to save
 ```
-***Step 6.*** clone this repository to your home directory.
+***Step 8.*** clone this repository to your home directory.
 ```
 cd ~
 git clone https://github.com/bradgillap/I2C-LCD-Display
 ```
 
-***Step 7.*** That's it! Now you can run any of the demo files. Just remember, each script requires lcddriver.py and i2c_lib.py to run. 
+***Step 9.*** That's it! Now you can run any of the demo files. Just remember, each script requires lcddriver.py and i2c_lib.py to run. 
 
 ***Example 16x2 Display***
 ```
