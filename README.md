@@ -59,6 +59,9 @@ sudo nano /etc/modules
 snd-bcm2835     # This enables GPIO pins on the pi.
 i2c-dev         # This enables i2c communication.
 ```
+```
+ctrl+o to save
+```
 ***Step 4.*** Now we need to also turn on i2c everytime the pi boots.
 ```
 sudo nano /boot/config.txt
@@ -69,6 +72,9 @@ sudo nano /boot/config.txt
 dtparam=i2c_arm=on
 dtparam=i2c1=on
 i2c_arm_baudrate=100000
+```
+```
+ctrl+o to save
 ```
 ***Step 6.*** clone this repository to your home directory.
 ```
@@ -96,5 +102,8 @@ sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py &
 sudo nano /etc/rc
 #add this line to with a path to your script. Don't forget the and symbol
 python /root/YOURLCDSCRIPT.py &
+```
+```
+ctrl+o to save
 ```
 
