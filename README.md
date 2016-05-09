@@ -23,7 +23,7 @@ Any [raspbian](https://www.raspbian.org/) based operating system will work. I re
 
 ##Connect LCD to Pi
 
-***Step 1.*** Connect GND to GROUND. Pin 6
+***Step*** :one: Connect GND to GROUND. Pin 6
 
 ***Step 2.*** Connect VCC to 5V. Pin 2
 
