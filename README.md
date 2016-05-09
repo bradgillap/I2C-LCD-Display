@@ -5,9 +5,9 @@ Drivers and code for two very low cost LCD displays with instructions on how to 
 
 ![LCD running demo script.](https://github.com/bradgillap/I2C-LCD-Display/blob/master/example.jpg)
 
-##Requirements
-### Hardware
-#### Screens
+##Requirements :memo:
+### Hardware :nut_and_bolt:
+#### Screens :pager:
 
 **16x2 LCD Screen**
 
@@ -16,12 +16,12 @@ http://www.dx.com/p/i2c-iic-lcd-1602-display-module-with-white-backlight-4-pin-c
 **20x4 LCD Screen**
 
 http://www.dx.com/p/5v-iic-i2c-3-1-blue-screen-lcd-display-module-for-arduino-green-black-232993
-#### Raspberry Pi 1/2/3
+#### Raspberry Pi :one:/:two:/:three: 
 [https://www.raspberrypi.org/](https://www.raspberrypi.org/)
-### Operating System
+### Operating System :barchart:
 Any [raspbian](https://www.raspbian.org/) based operating system will work. I recommend [DietPi](http://dietpi.com/) for beginning your projects to reduce on overhead but novice users should use [raspbian](https://www.raspbian.org/).
 
-##Connect LCD to Pi
+##Connect LCD to Pi :electric_plug:
 
 ***Step :one::***  Connect GND to GROUND. Pin 6
 
@@ -35,7 +35,7 @@ Reference GPIO
 ![LCD running demo script.](https://github.com/bradgillap/I2C-LCD-Display/blob/master/gpioref2.png)
 
 
-###Software Setup
+###Software Setup :wine_glass:
 We need to do a few things before you can begin running demo python scripts to display things on the LCD screen. Just follow the steps and you should be fine. If you are using the **root** account, you can ignore the **sudo** command. You only need to do these steps once.
 
 We first need to enable the GPIO pins on the raspberrypi
@@ -108,14 +108,14 @@ git clone https://github.com/bradgillap/I2C-LCD-Display
 ```
 sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py
 ```
-#### OR
+#### OR :point_right:
 
 ***Run the script in the background***
 ```
 sudo python ~/I2C-LCD-Display/16x2LCD/demo_lcd.py &
 ```
 
-#### OR
+#### OR :point_right:
 
 ***Run your script at boot every time***
 ```
