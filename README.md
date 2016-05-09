@@ -82,9 +82,9 @@ sudo nano /boot/config.txt
 ```
 ***Step :seven::*** Find the section for ***i2c*** and change the lines so they look like this. If you don't see these lines, go ahead and add them now.
 
-***Dietpi users:*** Use *dietpi-config* and enable RPI i2c under advanced options.
+***:exclamation: Dietpi users:*** Use *dietpi-config* and enable RPI i2c under advanced options.
 
-***Raspbian users:*** Use *raspi-config* and enable RPI i2c under advanced options. If asked about Arm says YES.
+***:exclamation: Raspbian users:*** Use *raspi-config* and enable RPI i2c under advanced options. If asked about Arm says YES.
 
 In either case your /boot/config.txt should look like this.
 ```
