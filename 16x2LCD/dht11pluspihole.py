@@ -3,7 +3,7 @@
 # Bradley Gillap 2016
 
 import lcddriver		#Driver
-import socke			#For host and IP
+import socket			#For host and IP
 import tim			#For general timers. Sleep etc.
 import fcnt			#For host and IP
 import struct
