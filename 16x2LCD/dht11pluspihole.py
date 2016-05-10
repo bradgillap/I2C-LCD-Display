@@ -42,6 +42,7 @@ try:
         percent = data['ads_percentage_today']
         queries = data['dns_queries_today']
         domains = data['domains_being_blocked']
+        display.lcd_clear()   
         display.lcd_display_string("Host:" + str((socket.gethostname())), 1)    #Show host on screen max 16 chars
         display.lcd_display_string("IP:" + str(ipaddy), 2)                      #Show IP address on screen max 16 chars
         time.sleep(4)                                                           #Wait
@@ -59,7 +60,7 @@ try:
 	display.lcd_clear()							#Clear screen but wait for update from sensor
 	display.lcd_display_string(temp, 1)					#write temp to screen
 	display.lcd_display_string(humid, 2)					#write humdity to screen
-	time.sleep(2)
+	time.sleep(4)
 except KeyboardInterrupt:       # If there is a KeyboardInterrupt (when you press ctrl+c), exit the program and cleanup
     print("Cleaning up!")
     display.lcd_clear()
