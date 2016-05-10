@@ -12,19 +12,19 @@ import time
 
 #Assign to variables
 
-pin = 26   									#GPIO pin we are communicating on CHANGE THIS
+pin = 26   					#GPIO pin we are communicating on CHANGE THIS
 h,t = dht.read_retry(dht.DHT11, pin)		#Refreshes the DHT sensor. ARG DHT11 or DHT22 sensor
-display = lcddriver.lcd()					#Refering to the LCD
-temp = 'Temp:{0:0.1f} C'.format(t)			#Store temp string info 
+display = lcddriver.lcd()			#Refering to the LCD
+temp = 'Temp:{0:0.1f} C'.format(t)		#Store temp string info 
 humid = 'Humidity:{1:0.1f}%'.format(t,h)	#Store Humidity info
 
 try:
 	while True:
 			h,t = dht.read_retry(dht.DHT11, pin)		#Loop the check sensor check DHT11 or DHT22 sensor 
-			temp = 'Temp:{0:0.1f} C'.format(t)			#Update variable temperature
+			temp = 'Temp:{0:0.1f} C'.format(t)		#Update variable temperature
 			humid = 'Humidity:{1:0.1f}%'.format(t,h)	#Update variable humidity
-			display.lcd_clear()							#Clear screen
-			display.lcd_display_string(temp, 1)			#write temp to screen
+			display.lcd_clear()				#Clear screen
+			display.lcd_display_string(temp, 1)		#write temp to screen
 			display.lcd_display_string(humid, 2)		#write humdity to screen
 			time.sleep(2)
  
