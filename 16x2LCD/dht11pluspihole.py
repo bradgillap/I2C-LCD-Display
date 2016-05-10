@@ -2,13 +2,13 @@
 # Requires adafruit python DHT11, DHT22 Library. See other DHT script
 # Bradley Gillap 2016
 
-import lcddriver            #Driver
-import socket               #For host and IP
-import time                 #For general timers. Sleep etc.
-import fcntl                #For host and IP
+import lcddriver		#Driver
+import socke			#For host and IP
+import tim			#For general timers. Sleep etc.
+import fcnt			#For host and IP
 import struct
-import json                 #For pihole API
-import urllib2              #For pihole API
+import jso			#For pihole API
+import urllib			#For pihole API
 import Adafruit_DHT as dht	#Arguments dht instead of Adafruit_DHT, DHT11 device, GPIO26
 
 #Initialize IP Address Check
@@ -26,10 +26,10 @@ socket.gethostbyname(socket.gethostname())
 #VARIABLES
 # If you use something from the driver library use the "display." prefix first
 
-pin = 26   					                                    #GPIO pin we are communicating on CHANGE THIS
-h,t = dht.read_retry(dht.DHT11, pin)		                #Refreshes the DHT sensor. ARG DHT11 or DHT22 sensor
-temp = 'Temp:{0:0.1f} C'.format(t)		                  #Store temp string info 
-humid = 'Humidity:{1:0.1f}%'.format(t,h)	              #Store Humidity info
+pin = 26						#GPIO pin we are communicating on CHANGE THIS
+h,t = dht.read_retry(dht.DHT11, pin)			#Refreshes the DHT sensor. ARG DHT11 or DHT22 sensor
+temp = 'Temp:{0:0.1f} C'.format(t)			#Store temp string info 
+humid = 'Humidity:{1:0.1f}%'.format(t,h)		#Store Humidity info
 display = lcddriver.lcd()                               #Load lcddriver and set it to display
 ipaddy = get_ip_address('eth0')                         #Define Ip address variable
 url = ("http://" + str(ipaddy) + "/pihole/api.php")     #Connect to pihole API
@@ -53,13 +53,13 @@ try:
         display.lcd_display_string("Queries: " + str(queries), 1)               #Show total queries on screen max 16 chars
         display.lcd_display_string("Domains: " + str(domains), 2)               #Show total domains in blocklist max 16 chars
         time.sleep(4)
-			  h,t = dht.read_retry(dht.DHT11, pin)	          	                      #Loop the check sensor check DHT11 or DHT22 sensor 
-			  temp = 'Temp:{0:0.1f} C'.format(t)		                                  #Update variable temperature
-			  humid = 'Humidity:{1:0.1f}%'.format(t,h)	                              #Update variable humidity
-			  display.lcd_clear()				                                              #Clear screen but wait for update from sensor
-			  display.lcd_display_string(temp, 1)		                                  #write temp to screen
-			  display.lcd_display_string(humid, 2)		                                #write humdity to screen
-			  time.sleep(4)
+	h,t = dht.read_retry(dht.DHT11, pin)					#Loop the check sensor check DHT11 or DHT22 sensor 
+	temp = 'Temp:{0:0.1f} C'.format(t)					#Update variable temperature
+	humid = 'Humidity:{1:0.1f}%'.format(t,h)				#Update variable humidity
+	display.lcd_clear()							#Clear screen but wait for update from sensor
+	display.lcd_display_string(temp, 1)					#write temp to screen
+	display.lcd_display_string(humid, 2)					#write humdity to screen
+	time.sleep(4)
 except KeyboardInterrupt:       # If there is a KeyboardInterrupt (when you press ctrl+c), exit the program and cleanup
     print("Cleaning up!")
     display.lcd_clear()
