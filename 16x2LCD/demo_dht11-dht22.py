@@ -4,6 +4,7 @@
 # INSTRUCTIONS: git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 # INSTRUCTIONS: sudo apt-get install build-essential python-dev python-openssl
 # INSTRUCTIONS: sudo python setup.py install
+# INSTRUCTIONS: FIND DHT11 or DHT22 INFO ONLINE FOR CONNECTING. 10k resister required
 #Written by Bradley Gillap 2016
 
 import Adafruit_DHT as dht	#Arguments dht instead of Adafruit_DHT, DHT11 device, GPIO26
