@@ -138,3 +138,8 @@ ctrl+o to save
 :question: : My /boot/config.txt keeps being overwritten with the wrong values.
 
 :thumbsup: : Use raspi-config or dietpi-config to make the change in the advanced options section instead.
+
+
+:question: :Can't you just write an installer script with whiptail?
+
+:thumbsup: : I sure can like others have but I ran into that same scenario and it took me 5x as long to decipher how others had done these tasks. In many cases a script is better but the use cases here are pretty well only tinkerers like yourself. 
