@@ -4,10 +4,10 @@
 
 import lcddriver		#Driver
 import socket			#For host and IP
-import tim			#For general timers. Sleep etc.
+import time			#For general timers. Sleep etc.
 import fcnt			#For host and IP
 import struct
-import jso			#For pihole API
+import json			#For pihole API
 import urllib			#For pihole API
 import Adafruit_DHT as dht	#Arguments dht instead of Adafruit_DHT, DHT11 device, GPIO26
 
