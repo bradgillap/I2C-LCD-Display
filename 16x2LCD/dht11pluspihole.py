@@ -59,7 +59,7 @@ try:
 	display.lcd_clear()							#Clear screen but wait for update from sensor
 	display.lcd_display_string(temp, 1)					#write temp to screen
 	display.lcd_display_string(humid, 2)					#write humdity to screen
-	time.sleep(4)
+	time.sleep(2)
 except KeyboardInterrupt:       # If there is a KeyboardInterrupt (when you press ctrl+c), exit the program and cleanup
     print("Cleaning up!")
     display.lcd_clear()
