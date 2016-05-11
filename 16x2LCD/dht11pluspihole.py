@@ -25,7 +25,6 @@ socket.gethostbyname(socket.gethostname())
 
 #VARIABLES
 # If you use something from the driver library use the "display." prefix first
-
 pin = 26												#GPIO pin we are communicating on CHANGE THIS
 h,t = dht.read_retry(dht.DHT11, pin)					#Refreshes the DHT sensor. ARG DHT11 or DHT22 sensor
 temp = 'Temp:{0:0.1f} C'.format(t)						#Store temp string info 
@@ -34,9 +33,7 @@ display = lcddriver.lcd()                               #Load lcddriver and set 
 ipaddy = get_ip_address('eth0')                         #Define Ip address variable
 url = ("http://" + str(ipaddy) + "/pihole/api.php")     #Connect to pihole API
 
-
-
-#INIT FUNCTIONS Let's kill some kittens with globals first.
+#INIT FUNCTIONS KILLING KITTENS
 def pihole_hit():								#Function to poll the API for pihole.					
 	global data
 	global blocked
