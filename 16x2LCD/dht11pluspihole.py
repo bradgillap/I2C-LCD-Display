@@ -27,8 +27,8 @@ socket.gethostbyname(socket.gethostname())
 # If you use something from the driver library use the "display." prefix first
 pin = 26												#GPIO pin we are communicating on CHANGE THIS
 h,t = dht.read_retry(dht.DHT11, pin)					#Refreshes the DHT sensor. ARG DHT11 or DHT22 sensor
-temp = 'Temp:{0:0.1f} C'.format(t)						#Store temp string info 
-humid = 'Humidity:{1:0.1f}%'.format(t,h)				#Store Humidity info
+temp =  'Temp : {0:0.1f}C'.format(t)						#Store temp string info 
+humid = 'Humid: {1:0.1f}%'.format(t,h)				#Store Humidity info
 display = lcddriver.lcd()                               #Load lcddriver and set it to display
 ipaddy = get_ip_address('eth0')                         #Define Ip address variable
 url = ("http://" + str(ipaddy) + "/pihole/api.php")     #Connect to pihole API
@@ -51,8 +51,8 @@ def temp_hit():									#Poll the temp sensor and update vars
 	global temp
 	global humid
 	h,t = dht.read_retry(dht.DHT11, pin)		#Change sensor here DHT11, DHT22 etc
-	temp = 'Temp:{0:0.1f} C'.format(t)			#Formatting
-	humid = 'Humidity:{1:0.1f}%'.format(t,h)	#Formatting don't really understand these args
+	temp =  'Temp : {0:0.1f}C'.format(t)			#Formatting
+	humid = 'Humid: {1:0.1f}%'.format(t,h)	#Formatting don't really understand these args
 
 #DISPLAY FUNCTIONS to output to the lcd.
 def net_info():
