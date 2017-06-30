@@ -31,7 +31,7 @@ temp =  'Temp : {0:0.1f}C'.format(t)						#Store temp string info
 humid = 'Humid: {1:0.1f}%'.format(t,h)				#Store Humidity info
 display = lcddriver.lcd()                               #Load lcddriver and set it to display
 ipaddy = get_ip_address('eth0')                         #Define Ip address variable
-url = ("http://" + str(ipaddy) + "/pihole/api.php")     #Connect to pihole API
+url = ("http://" + str(ipaddy) + "/admin/api.php")     #Connect to pihole API
 
 #INIT FUNCTIONS KILLING KITTENS
 def pihole_hit():								#Function to poll the API for pihole.					
