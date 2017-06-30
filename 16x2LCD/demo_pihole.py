@@ -30,7 +30,7 @@ socket.gethostbyname(socket.gethostname())
 
 display = lcddriver.lcd()                               #Load lcddriver and set it to display
 ipaddy = get_ip_address('eth0')                         #Define Ip address variable
-url = ("http://" + str(ipaddy) + "/pihole/api.php")     #Connect to pihole API
+url = ("http://" + str(ipaddy) + "/admin/api.php")     #Connect to pihole API
 data = json.load(urllib2.urlopen(url))                  #Populate data variable with API info
 
 try:
